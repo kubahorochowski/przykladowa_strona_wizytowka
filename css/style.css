@@ -1,0 +1,801 @@
+/*
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.clearfix::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+
+header {
+   position: relative;
+   height: 100vh;
+   background-color: #29a6dc;
+   overflow: hidden;
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+header > * {
+   position: absolute;
+}
+
+header img {
+   height: 50%;
+   bottom: 0;
+   right: 0;
+
+}
+
+header div.welcome {
+   z-index: 1;
+   top: 10%;
+   left: 5%;
+   right: 5%;
+   font-family: 'Saira Condensed', sans-serif;
+   color: white;
+   font-weight: bold;
+   font-size: 40px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+header h1 {
+   margin-top: 15px;
+   font-size: 24px;
+}
+
+header button {
+   line-height: 40px;
+   padding: 0 20px;
+   margin-top: 30px;
+   background-color: transparent;
+   color: white;
+   border: 2px solid white;
+   font-size: 16px;
+   font-family: 'Saira', sans-serif;
+   text-transform: uppercase;
+}
+
+@media(orientation: portrait) and (min-width: 410px) {
+   header h1 {
+      font-size: 26px;
+   }
+
+   header button {
+      padding: 8px 20px;
+      font-size: 20px;
+      margin-top: 50px;
+   }
+
+   header img {
+      right: -20%;
+   }
+
+}
+
+@media(orientation: portrait) and (min-width: 370px) and (min-height:800px) {
+   header button {
+      margin-top: 50px;
+   }
+
+   header img {
+      right: -25%;
+      height: 55%;
+   }
+}
+
+@media(orientation: portrait) and (min-width: 768px) {
+   header p {
+      font-size: 44px;
+   }
+
+   header h1 {
+      font-size: 34px;
+   }
+
+   header button {
+      font-size: 30px;
+      padding: 10px 20px;
+      line-height: 50px;
+   }
+
+   header img {
+      right: 0%;
+   }
+
+}
+
+@media(orientation: landscape) {
+
+   header img {
+      height: 80%;
+      bottom: 0;
+      right: 0;
+
+   }
+
+
+   header div.welcome {
+      top: 15%;
+      left: 5%;
+      right: 50%;
+   }
+
+   header h1 {
+      margin-top: 15px;
+      font-size: 20px;
+   }
+
+   header button {
+      margin-top: 40px;
+   }
+
+}
+
+@media(orientation: landscape) and (min-width:640px) {
+   header h1 {
+      font-size: 24px;
+   }
+}
+
+@media(orientation: landscape) and (min-width:1024px) {
+   header p {
+      font-size: 56px;
+   }
+
+   header h1 {
+      margin-top: 40px;
+      font-size: 34px;
+   }
+
+   header button {
+      margin-top: 80px;
+      font-size: 26px;
+      line-height: 65px;
+
+   }
+
+   header img {
+      right: -17%;
+      height: 90%
+   }
+
+}
+
+@media(orientation: landscape) and (min-width:1280px) {
+   header div.welcome {
+      text-align: left;
+      left: 6%;
+   }
+
+   header p {
+      font-size: 64px;
+   }
+
+   header h1 {
+      margin-top: 40px;
+      font-size: 40px;
+   }
+
+   header button {
+      margin-top: 80px;
+      padding: 0 40px;
+      font-size: 26px;
+      line-height: 65px;
+      border-width: 3px;
+      cursor: pointer;
+      transition: .3s;
+   }
+
+   header button:hover {
+      background-color: #fff;
+      color: #111;
+   }
+
+   header img {
+      right: -5%;
+      height: 95%;
+   }
+
+}
+
+@media(orientation: landscape) and (min-width:1600px) {
+
+   header p {
+      font-size: 94px;
+   }
+
+   header h1 {
+      font-size: 60px;
+   }
+
+   header button {
+      font-size: 32px;
+      line-height: 80px;
+   }
+
+}
+
+/*cechy, sekcja 1*/
+.features {
+   max-width: 1600px;
+   margin: 40px auto 0;
+   padding: 5%;
+   text-align: center;
+}
+
+.features h1 {
+   font-family: 'Saira Condensed', sans-serif;
+   font-size: 26px;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+}
+
+.features img {
+   width: 100%;
+   margin: 5px 0;
+   max-width: 375px;
+}
+
+.features h2 {
+   font-family: 'Saira Condensed', sans-serif;
+   font-size: 20px;
+   text-transform: uppercase;
+}
+
+.features p.description {
+   margin: 20px 0;
+   font-family: 'Saira', sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+}
+
+@media(min-width:360px) {
+   .features h1 {
+      font-size: 28px;
+   }
+
+   .features h2 {
+      font-size: 24px;
+   }
+}
+
+@media(min-width:768px) {
+   .features h1 {
+      font-size: 36px;
+   }
+
+   .features h2 {
+      font-size: 28px;
+   }
+
+   .features p.description {
+      font-size: 20px;
+   }
+
+}
+
+@media(min-width:1024px) {
+   .features {
+      margin-top: 40px;
+      padding: 5% 2%;
+      text-align: center;
+   }
+
+   .feature {
+      float: left;
+      width: 33%;
+      padding: 25px;
+   }
+
+
+   .features h1 {
+      font-size: 36px;
+   }
+
+   .features h2 {
+      font-size: 20px;
+   }
+
+   .features p.description {
+      font-size: 16px;
+      line-height: 120%;
+      padding: 0 10px;
+   }
+
+}
+
+@media(min-width:1600px) {
+
+   .feature {
+      padding: 20px 40px;
+   }
+
+   .features h1 {
+      font-size: 50px;
+   }
+
+   .features h2 {
+      font-size: 34px;
+   }
+
+   .features p.description {
+      font-size: 22px;
+      line-height: 140%
+   }
+
+}
+
+.portfolio {
+   background-color: black;
+   padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+   font-family: 'Saira Condensed', sans-serif;
+   font-size: 28px;
+   text-transform: uppercase;
+   color: white;
+   text-align: center;
+   padding: 10px 20px;
+   margin-bottom: 15px;
+}
+
+.portfolio .web img {
+   width: 100%;
+}
+
+.portfolio .about {
+   font-family: 'Saira', sans-serif;
+   color: white;
+   font-weight: normal;
+   padding: 10px 20px 20px 0;
+   text-align: left;
+}
+
+.portfolio .about h2 {
+   font-size: 18px;
+   border-bottom: 2px solid white;
+   margin-bottom: 12px;
+   padding-bottom: 6px;
+   text-indent: 20px;
+}
+
+.portfolio .about p {
+   font-size: 12px;
+   padding-left: 20px;
+}
+
+.portfolio .project {
+   max-width: 1400px;
+   margin: 0 auto 20px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+   background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even) {
+   background-color: #29a6dc;
+}
+
+@media(min-width: 768px) {
+   .portfolio h1 {
+      font-size: 40px;
+   }
+
+   .portfolio .about h2 {
+      font-size: 28px;
+      text-indent: 40px;
+   }
+
+   .portfolio .about p {
+      font-size: 18px;
+      padding-left: 40px;
+   }
+
+   .portfolio .project {
+      margin-bottom: 40px;
+   }
+
+}
+
+@media(orientation: landscape) {
+
+   .web,
+   .about {
+      float: left;
+      width: 50%;
+   }
+
+   .web img {
+      display: block;
+   }
+
+   .portfolio .project:nth-of-type(even) .web {
+      float: right;
+   }
+
+   .portfolio .project:nth-of-type(even) .about {
+      padding-right: 0;
+   }
+
+   .portfolio .project:nth-of-type(even) .about p {
+      padding-right: 20px;
+   }
+
+   .portfolio .project:nth-of-type(even) .about h2 {
+      text-indent: 0;
+      margin-left: 40px;
+   }
+
+}
+
+@media(min-width: 1400px) and (orientation: landscape) {
+   .portfolio h1 {
+      font-size: 50px;
+      padding: 30px 0;
+   }
+
+   .portfolio .about h2 {
+      padding-top: 40px;
+      font-size: 30px;
+      text-indent: 40px;
+      margin-bottom: 40px;
+   }
+
+   .portfolio .about p {
+      font-size: 18px;
+      padding-left: 40px;
+      line-height: 180%;
+   }
+
+   .portfolio .project {
+      margin-bottom: 40px;
+   }
+
+}
+
+/*slogan*/
+.slogan {
+   text-align: center;
+   background-image: url(../images/motto.jpg);
+   background-size: cover;
+   background-position: top center;
+   background-attachment: fixed;
+   color: white;
+}
+
+.slogan .bg {
+   padding: 30px 10px;
+   background-color: rgba(0, 63, 114, .5);
+
+}
+
+.slogan h1 {
+   font-family: 'Saira Condensed', sans-serif;
+   font-size: 26px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.slogan p {
+   font-family: Saira, sans-serif;
+   font-size: 18px;
+}
+
+.slogan p.author {
+   margin-top: 18px;
+   font-size: 12px;
+}
+
+@media(orientation:landscape) {
+   .slogan p {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      background-position: top center;
+   }
+
+}
+
+@media(min-width: 768px) {
+   .slogan .bg {
+      padding: 50px 10px;
+   }
+
+   .slogan h1 {
+      font-size: 40px;
+      margin-bottom: 35px;
+   }
+
+   .slogan p {
+      font-size: 26px;
+      width: 65%;
+      margin: 0 auto;
+   }
+
+   .slogan p.author {
+      margin-top: 40px;
+      font-size: 18px;
+   }
+}
+
+@media(min-width: 1024px) {
+   .slogan .bg {
+      padding: 70px 10px;
+   }
+
+   .slogan h1 {
+      font-size: 50px;
+      margin-bottom: 45px;
+   }
+
+   .slogan p {
+      font-size: 34px;
+      width: 55%;
+   }
+
+   .slogan p.author {
+      margin-top: 40px;
+      font-size: 26px;
+      cursor: default;
+   }
+}
+
+/*hobby*/
+.hobby {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.hobby .item {
+   height: 25vh;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.hobby h1 {
+   padding: 20px;
+   font-family: Saira condensed, sans-serif;
+   text-align: center;
+   font-size: 24px;
+   text-transform: uppercase;
+}
+
+.hobby .item:nth-of-type(1) {
+   background-image: url(../images/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+   background-image: url(../images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+   background-image: url(../images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+   background-image: url(../images/hobby4.jpg);
+}
+
+.hobby .item p {
+   font-family: Saira, sans-serif;
+   text-align: center;
+   color: white;
+   /*   line-height: 25vh;*/
+   text-shadow: 0 0 4px black;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 5px 0;
+}
+
+@media(min-width: 533px) {
+   .hobby .item {
+      float: left;
+      width: 50%;
+      height: 40vh;
+   }
+
+}
+
+@media(min-width: 768px) {
+   .hobby h1 {
+      font-size: 40px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+   }
+
+   .hobby .item {
+      height: 35vh;
+   }
+
+   .hobby .item p {
+      font-size: 30px;
+      padding: 10px 0;
+   }
+
+}
+
+@media(min-width: 1024px) {
+
+   .hobby .item {
+      height: 40vh;
+      background-size: 100%;
+      transition: .3s;
+   }
+
+   .hobby .item:hover {
+      background-size: 130%;
+   }
+
+   .hobby .item p {
+      line-height: 40vh;
+      padding: 0;
+      opacity: 0;
+      transition: .3s;
+   }
+
+   .hobby .item:hover p {
+      opacity: 1;
+   }
+
+}
+
+@media(min-width: 1600px) {
+   .hobby h1 {
+      font-size: 50px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+   }
+
+   .hobby .item p {
+      font-size: 40px;
+   }
+
+}
+
+/*kontak*/
+
+.contact {
+   background-color: #000;
+   padding: 25px 20px;
+}
+
+.contact h1 {
+   font-family: 'Saira Condensed', sans-serif;
+   font-size: 26px;
+   text-transform: uppercase;
+   margin-bottom: 15px;
+   color: white;
+   text-align: center;
+}
+
+.contact .wrap {
+   padding-top: 25px;
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+   width: 100%;
+   margin-bottom: 20px;
+   font-family: Saira, sans-serif;
+   font-size: 12px;
+   padding: 5px;
+}
+
+.contact input {
+   height: 36px;
+}
+
+.contact textarea {
+   height: 120px;
+}
+
+.contact button {
+   line-height: 40px;
+   font-size: 15px;
+   background-color: black;
+   color: white;
+   border: 2px solid white;
+}
+
+.contact .socials {
+   padding-top: 30px;
+   font-size: 0;
+}
+
+.contact .social {
+   padding-top: 10px;
+   color: white;
+   font-family: Saira condensed, sans-serif;
+}
+
+.contact .social img {
+   float: left;
+}
+
+.contact .social span {
+   float: left;
+   padding-left: 20px;
+   font-size: 20px;
+   line-height: 72px;
+}
+
+@media(min-width: 533px) {
+   .contact .social {
+      display: inline-block;
+      width: 50%;
+   }
+}
+
+@media(min-width: 1024px) {
+
+   .contact h1 {
+      font-size: 50px;
+      padding: 30px 0;
+   }
+
+   .contact form,
+   .contact .socials {
+      float: left;
+      width: 50%;
+      padding: 0 20px;
+   }
+
+   .contact .social {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+   }
+
+   .contact input,
+   .contact button,
+   .contact textarea {
+      margin-bottom: 30px;
+   }
+
+   .contact input {
+      height: 46px;
+      font-size: 24px;
+   }
+
+   .contact textarea {
+      height: 180px;
+      font-size: 24px;
+   }
+
+   .contact button {
+      line-height: 50px;
+      font-size: 20px;
+      transition: .3s;
+      cursor: pointer;
+   }
+
+   .contact button:hover {
+      color: black;
+      background-color: #fff;
+   }
+
+}
+
+/*stopka*/
+footer {
+   padding: 15px 0;
+   background-color: #29a6dc;
+   color: white;
+   font-family: Saira, sans-serif;
+   font-size: 20px;
+   text-align: center;
+}
